@@ -3,48 +3,54 @@
 <html>
 
 
-<head>
-    <title>Pagina Inicial</title>
-    <meta charset="utf-8">
-</head>
+    <head>
+        <title>Pagina Inicial</title>
+        <meta charset="utf-8">
+    </head>
 
-<body>
+    <body>
 
-    <h2>Produtos</h2>
-    <table border="2" width="100%">
-        <tr>
-            <th>Codigo</th>
-            <th>Produto</th>
-            <th>Preço</th>
-        </tr>
-        <tr>
-            <td>001</td>
-            <td>Notebook</td>
-            <td>R$ 2500,99</td>
-        </tr>
-        <tr>
-            <td>002</td>
-            <td>Celular</td>
-            <td>R$ 1099,99</td>
-        </tr>
+        <h2>Login</h2>
+        <form action="processa.php">
 
-        <tr>
-            <td rowspan="2">Desconto</td>
-            <td colspan="2">Cupom1 -R$10</td>
-        </tr>
-        <tr>
-            <td colspan="2">Cupom2 -R$12</td>
-        </tr>
+            Login:<br>
+            <input type="text" name="login"><br>
 
-        <tr>
-            <td>Total</td>
-            <td colspan="2">R$ 4500</td>
-        </tr>
-    </table>
+            Senha:<br>
+            <input type="password" name="senha"> <br><br>
+
+            <input type="button" value="Logar">
 
 
+        </form>
+        <hr>
 
 
+        <h2>Cadastre-se</h2>
+        <form></form>
+        Nome De Usuario: <br>
+        <input type="text" name="usuario"><br>
 
+        Sexo: <br>
+        <input type="radio" name="sexo" value="M"> Masculino<br>
+        <input type="radio" name="sexo" value="F"> Feminino<br><br>
+
+        Interesses<br>
+        <input type="checkbox" name="interesses"> Futebol <br>
+        <input type="checkbox" name="interesses"> Cursos <br>
+        <input type="checkbox" name="interesses"> Livros <br><br>
+
+        Estado<br>
+        <select name="Estado">
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+            <option value="sc">SC</option>
+            <option value="pr">PR</option>
+        </select><br><br>
+
+        Observacoes: <br>
+        <textarea></textarea><br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
 
 </html>
